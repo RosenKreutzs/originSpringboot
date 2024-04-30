@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.EchartDigitalReadingRatingMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.EchartDigitalReadingRating">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="year" column="year" jdbcType="INTEGER"/>
+            <result property="rate" column="rate" jdbcType="DOUBLE"/>
+            <result property="digitalReadStyle" column="digital_read_style" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,year,rate,
+        digital_read_style
+    </sql>
+</mapper>

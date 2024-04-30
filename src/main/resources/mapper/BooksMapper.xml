@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.BooksMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.Books">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="bookId" column="book_id" jdbcType="VARCHAR"/>
+            <result property="bestBookId" column="best_book_id" jdbcType="VARCHAR"/>
+            <result property="workId" column="work_id" jdbcType="VARCHAR"/>
+            <result property="booksCount" column="books_count" jdbcType="VARCHAR"/>
+            <result property="isbn" column="isbn" jdbcType="VARCHAR"/>
+            <result property="isbn13" column="isbn13" jdbcType="VARCHAR"/>
+            <result property="authors" column="authors" jdbcType="VARCHAR"/>
+            <result property="originalPublicationYear" column="original_publication_year" jdbcType="VARCHAR"/>
+            <result property="originalTitle" column="original_title" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="languageCode" column="language_code" jdbcType="VARCHAR"/>
+            <result property="averageRating" column="average_rating" jdbcType="VARCHAR"/>
+            <result property="ratingsCount" column="ratings_count" jdbcType="VARCHAR"/>
+            <result property="workRatingsCount" column="work_ratings_count" jdbcType="VARCHAR"/>
+            <result property="workTextReviewsCount" column="work_text_reviews_count" jdbcType="VARCHAR"/>
+            <result property="ratings1" column="ratings1" jdbcType="VARCHAR"/>
+            <result property="ratings2" column="ratings2" jdbcType="VARCHAR"/>
+            <result property="ratings3" column="ratings3" jdbcType="VARCHAR"/>
+            <result property="ratings4" column="ratings4" jdbcType="VARCHAR"/>
+            <result property="ratings5" column="ratings5" jdbcType="VARCHAR"/>
+            <result property="imageUrl" column="image_url" jdbcType="VARCHAR"/>
+            <result property="smallImageUrl" column="small_image_url" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,book_id,best_book_id,
+        work_id,books_count,isbn,
+        isbn13,authors,original_publication_year,
+        original_title,title,language_code,
+        average_rating,ratings_count,work_ratings_count,
+        work_text_reviews_count,ratings_1,ratings_2,
+        ratings_3,ratings_4,ratings_5,
+        image_url,small_image_url
+    </sql>
+</mapper>
